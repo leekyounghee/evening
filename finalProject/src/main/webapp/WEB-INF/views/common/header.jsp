@@ -46,7 +46,11 @@
 <link rel="stylesheet" href="resources/css/header.css">
 <!-- Modernizr JS -->
 <script src="resources/js/modernizr-2.6.2.min.js"></script>
-
+<script type="text/javascript">
+function ch1(){
+	window.open("chat.ch","new","width=500,height=500,top=100,left=100");
+}
+</script>
 </head>
 <body>
 
@@ -71,6 +75,7 @@
 						<!-- 비회원시 -->
 						<c:if test="${ empty sessionScope.loginUser }">
 						<li><a href="login.me">로그인 / 회원가입</a></li>
+						<li><a href="chat.ch">1채팅1</a>
 						</c:if>
 						
 					
@@ -97,7 +102,7 @@
 						<li><a href="javascript:void(0);"
 							onclick="window.open('pushMain.pu', '알림창', 'top=10, left=10, width=920, height=510, status=no, menubar=no, toolbar=no, resizable=no');"><img
 								src="https://i.imgur.com/CNXbr6P.png"></a></li>
-								<li><a href="chat.ch">채팅샘플</a></li>
+								<li><a href="javascript:ch1();">채팅샘플</a></li>
 					</ul>
 				</div>
 			</div>
